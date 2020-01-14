@@ -1,0 +1,240 @@
+@import "_colors.scss";
+@import "_resettings.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_about.scss";
+@import "_services.scss";
+@import "_dynamic.scss";
+@import "_static.scss";
+@import "_ecommerce.scss";
+@import "_supports.scss";
+@import "_logo.scss";
+@import "_banner.scss";
+@import "_businesscard.scss";
+@import "_contact.scss";
+
+
+
+/*=========================================
+                    TOP
+===========================================*/
+.top {
+    background: lighten($color: $primary-color, $amount: 25%);
+    padding: .5rem 0;
+    text-align: center;
+    h1 {
+        color: $secondary-color;
+        text-shadow: $text-shadow;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 2.5rem;
+
+        &::selection {
+            color: white;
+        }
+    }
+    h2 {
+        color: $secondary-color;
+        text-shadow: $text-shadow;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 2rem;
+
+        &::selection {
+            color: white;
+        }
+    }
+}
+
+/*=========================================
+                    BANNER
+===========================================*/
+.banner {
+    width: 100%;
+    height: 420px !important;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: item 8s linear infinite 5s;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    background: url(../images/carousel/1.jpg) no-repeat center center/cover;
+
+    @keyframes item {
+        0% {
+            background: url(../images/carousel/1.jpg) no-repeat center center/cover;
+        }
+
+        25% {
+            background: url(../images/carousel/2.jpg) no-repeat center center/cover;
+        }
+
+        50% {
+            background: url(../images/carousel/3.jpg) no-repeat center center/cover;
+        }
+
+        75% {
+            background: url(../images/carousel/4.jpg) no-repeat center center/cover;
+        }
+
+        100% {
+            background: url(../images/carousel/5.jpg) no-repeat center center/cover;
+        }
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, .75) !important;
+    }
+
+    .container-fluid {
+        height: 100%;
+    }
+    .owl-theme {
+        .item {
+            .card {
+                padding: 0;
+                background: none;
+                border: 0;
+                border-radius: 0;
+                height: 100% !important;
+                color: white;
+                margin-top: 3.5rem;
+                .card-header {
+                    background: none;
+                    border-bottom: 0;
+                }
+                .card-body {
+                    .card-text {
+                        &::selection {
+                            color: $secondary-color;
+                        }
+                    }
+                    .btn {
+                        border-radius: 0;
+                        transition: all .5s ease-in-out;
+                        font-weight: bold;
+                        &:hover {
+                            background-color: $primary-color;
+                            opacity: .8;
+                            color: $secondary-color;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        // .item1 {
+        //     background: url(../images/helloquence-5fNmWej4tAA-unsplash.jpg) no-repeat center center/cover;
+        //     height: 100%;
+        // }
+        // .owl-nav {
+        //     display: none;
+        //     margin: 0;
+        //     padding: 0;
+        // }
+
+        // .owl-dots {
+        //     display: none;
+        //     margin: 0;
+        //     padding: 0;
+        // }
+    }         
+}
+
+/*=========================================
+                    OFFER
+===========================================*/
+.offer {
+    .card {
+        background: none;
+        transition: all .3s ease-in-out;
+        padding: 1rem 0;
+        height: 100%;
+        animation-duration: 3s;
+
+        .card-header {
+            background: none;
+            border-bottom: 0;
+            .display-4 {
+                .fa-wordpress {
+                    color: $wordpress-theme;
+                }
+                .fa-android {
+                    color: $android-theme;
+                }
+                .fa-cog {
+                    color: #17917F;
+                }
+                .fa-map-signs {
+                    color: #1e73be;
+                }
+                .fa-chart-line {
+                    color: $secondary-color;
+                }
+                .fa-home {
+                    color: #00B4A3;
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-.2rem);
+            // .card-header {
+            //     .display-4 {
+            //         .fa-wordpress {
+            //             color: $secondary-color;
+            //         }
+            //         .fa-android {
+            //             color: $secondary-color;
+            //         }
+            //         .fa-cog {
+            //             color: $secondary-color;
+            //         }
+            //         .fa-map-signs {
+            //             color: $secondary-color;
+            //         }
+            //         .fa-chart-line {
+            //             color: $primary-color;
+            //         }
+            //         .fa-home {
+            //             color: $secondary-color;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+/*=========================================
+                    CLIENTS
+===========================================*/
+.clients {
+    height: 100vh;
+    .card-deck {
+        .card {
+            background: none;
+            border: 0;
+            .card-header {
+                background: none;
+                border-bottom: 0;
+                .card-img-top {
+                    overflow: hidden;
+                    max-width: 130px;
+                    max-height: 130px;
+                    margin: 0 auto;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            .card-body {
+                small {
+                    display: block;
+                }
+            }
+        }   
+    }
+}
+

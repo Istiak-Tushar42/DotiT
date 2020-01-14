@@ -1,0 +1,1370 @@
+/*==================================================================================
+                                GOOGLE FONTS
+====================================================================================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #272121;
+  overflow-x: hidden;
+}
+
+section, hgroup, main, article {
+  overflow: hidden;
+}
+
+.card {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: .15rem;
+  color: #00074B;
+}
+
+/*=========================================
+                    HEADER
+===========================================*/
+.header {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.header .navbar-nav .nav-item .nav-link {
+  color: #00074B;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .navbar-nav .nav-item .nav-link:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: .15rem;
+  background: #00074B;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+  color: #00074B;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover:after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.header .navbar-nav .nav-item.active .nav-link {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.header .navbar-nav .nav-item.active .nav-link:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: .15rem;
+  background: #FF0000;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.header .navbar-nav .dropdown .dropdown-toggle:after {
+  display: block;
+  margin-left: 0 !important;
+  content: "";
+  border: 0 !important;
+}
+
+.header .navbar-nav .dropdown .dropdown-menu {
+  border-radius: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.header .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  color: #00074B;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .6rem;
+  vertical-align: middle;
+}
+
+.header .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background: #00074B;
+  color: white;
+}
+
+.header .navbar-nav .dropdown .dropdown-menu .active {
+  background: #00074B;
+  color: #FF0000;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #e8e8e8;
+  background: white;
+  vertical-align: middle;
+}
+
+.sticky .navbar-brand img {
+  height: 50px;
+}
+
+.sticky .navbar-nav .dropdown .dropdown-menu {
+  margin-top: .75rem;
+}
+
+/*=========================================
+                    FOOTER
+===========================================*/
+.footer {
+  background: #00074B;
+  padding-top: 0;
+}
+
+.footer .card {
+  border-radius: 0;
+  background: none;
+  border: 0;
+}
+
+.footer .card h4 {
+  color: #FF0000;
+}
+
+.footer .card h4::-moz-selection {
+  color: white;
+}
+
+.footer .card h4::selection {
+  color: white;
+}
+
+.footer .card a {
+  color: white !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  text-align: center;
+}
+
+.footer .card a:hover {
+  color: #FF0000 !important;
+  text-decoration: none;
+}
+
+.footer .card p {
+  color: white;
+}
+
+.footer .card p .fas {
+  color: #FF0000;
+}
+
+.footer .card p::-moz-selection {
+  color: #FF0000;
+}
+
+.footer .card p::selection {
+  color: #FF0000;
+}
+
+.footer .bg-footer {
+  background: #000532;
+}
+
+.footer .bg-footer .foot-p {
+  vertical-align: middle;
+  margin-top: 1rem;
+}
+
+.footer .bg-footer .foot-p a {
+  font-weight: bold;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.footer .bg-footer .foot-p a:hover {
+  text-decoration: none;
+  color: #FF0000;
+}
+
+.footer .bg-footer .foot-p::-moz-selection {
+  color: #FF0000;
+}
+
+.footer .bg-footer .foot-p::selection {
+  color: #FF0000;
+}
+
+/*=========================================
+                    ABOUT
+===========================================*/
+.about h1::-moz-selection {
+  color: #FF0000;
+}
+.about h1::selection {
+  color: #FF0000;
+}
+
+.about .card {
+  border: 0;
+}
+
+.about .card .card-body .card-title::-moz-selection {
+  color: #00074B;
+}
+
+.about .card .card-body .card-title::selection {
+  color: #00074B;
+}
+
+/*=========================================
+                ABOUT PACKAGES
+===========================================*/
+.about-packages .card {
+  height: 300px;
+}
+
+.about-packages .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.about-packages .card .card-header h1 {
+  color: #FF0000;
+}
+
+.about-packages .card .card-body {
+  margin-top: -1rem;
+}
+
+/*=========================================
+                    SERVICES
+===========================================*/
+.services .card {
+  padding: 1rem;
+  height: 375px;
+  margin-bottom: 1rem;
+}
+
+.services .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.services .card .card-header h1 {
+  color: #FF0000;
+}
+
+.services .card .card-body .card-title {
+  margin-top: -1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.services .card:hover {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.services .card:hover .card-header h1 {
+  color: #00074B;
+}
+
+.services .card:hover .card-title {
+  color: #FF0000;
+}
+
+.services .card:hover .card-title::-moz-selection {
+  color: #272121;
+}
+
+.services .card:hover .card-title::selection {
+  color: #272121;
+}
+
+.services .card:hover p {
+  color: #00074B;
+}
+
+.services .active .card-header h1 {
+  color: #00074B;
+}
+
+.services .active .card-body .card-title {
+  color: #FF0000;
+}
+
+.services .active:hover .card-header h1 {
+  color: #FF0000;
+}
+
+.services .active:hover .card-body .card-title {
+  color: #00074B;
+}
+
+/*=========================================
+                    APPROACH
+===========================================*/
+.approach .card {
+  border: 0;
+}
+
+.approach .card .card-header {
+  background: none;
+  border-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.approach .card .card-header h1::-moz-selection {
+  color: #FF0000;
+}
+
+.approach .card .card-header h1::selection {
+  color: #FF0000;
+}
+
+/*=========================================
+                DYNAMIC
+===========================================*/
+.dynamic .card {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.dynamic .card .card-header {
+  border-bottom: 0;
+  background: transparent;
+}
+
+.dynamic .card .card-header .card-title {
+  color: #272121;
+  font-weight: bold;
+}
+
+.dynamic .card .card-body .nav .nav-item {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem !important;
+  color: #272121;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.dynamic .card .card-body .nav .nav-item:hover {
+  color: #FF0000;
+}
+
+.dynamic .card .card-footer {
+  background: none;
+  border: 0;
+}
+
+/*=========================================
+                DYNAMIC PACK
+===========================================*/
+.dynamic-pack {
+  background: #000532;
+  padding: 1rem;
+}
+
+.dynamic-pack .media {
+  margin-top: 2rem;
+}
+
+.dynamic-pack .media h1 {
+  margin-top: 2.5rem;
+}
+
+.dynamic-pack .media h1 .fab {
+  color: #FF0000;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.dynamic-pack .media h1 .fas {
+  color: #FF0000;
+}
+
+.dynamic-pack .media .media-body h5 {
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.dynamic-pack .media .media-body p {
+  color: white;
+  font-weight: bold;
+}
+
+/*=========================================
+                    INFO
+===========================================*/
+.info h1.top {
+  color: #FF0000;
+}
+
+.info .media {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  height: 100%;
+}
+
+.info .media .media-body h5 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.info .media .media-body p {
+  color: #272121;
+  font-weight: bold;
+}
+
+/*=========================================
+                STATIC WEBSITE
+===========================================*/
+.static .card {
+  border: 0;
+  height: 100%;
+  border-radius: 0;
+}
+
+.static .card .card-header {
+  border-bottom: 0;
+  background: none;
+}
+
+.static .card .card-body .display-2 {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.static .card .card-footer {
+  background: none;
+  border: 0;
+}
+
+.static .card .card-footer .btn-block {
+  border-radius: 30px;
+}
+
+/*=========================================
+                STATIC PACKAGES
+===========================================*/
+.static-packages .card {
+  border: 0;
+  height: 100%;
+  border-radius: 0;
+  color: white;
+}
+
+.static-packages .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.static-packages .card .card-header .card-title {
+  color: white;
+}
+
+.static-packages .card .card-header h1 .far {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.static-packages .card .card-header .lead {
+  color: red;
+  font-weight: bold;
+}
+
+.static-packages .card .card-body .nav .nav-item {
+  font-weight: bold;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.static-packages .card .card-body .nav .nav-item:hover {
+  color: #FF0000;
+}
+
+.static-packages .card .card-body .btn {
+  border-radius: 30px;
+  border: 0;
+}
+
+.static-packages .card .card-body .btn-lg {
+  width: 200px;
+}
+
+.static-packages .card .card-body .btn-md {
+  width: 180px;
+}
+
+.static-packages .card .card-body .card-text {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.static-packages .left {
+  background: #4323FA;
+}
+
+.static-packages .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e64ff), to(#111d5e));
+  background: linear-gradient(#3e64ff, #111d5e);
+  padding: 0 !important;
+}
+
+/*=========================================
+                E-COMMERCE
+===========================================*/
+.ecommerce .card {
+  border-radius: 0 !important;
+  border: 0;
+}
+
+.ecommerce .card .card-header {
+  background: transparent;
+  border-bottom: 0;
+}
+
+.ecommerce .card .card-header h5 {
+  color: #272121;
+}
+
+.ecommerce .card .card-body .navbar-nav .nav-item {
+  font-weight: bold;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.ecommerce .card .card-body .navbar-nav .nav-item:hover {
+  color: #FF0000;
+}
+
+/*=========================================
+            E-COMMERCE PACKAGES
+===========================================*/
+.packages img {
+  margin-top: 2rem;
+}
+
+.packages .card {
+  border: 0;
+  background: none;
+  padding: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.packages .card .card-header {
+  border-bottom: 0;
+}
+
+.packages .card .card-body .nav .nav-item {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-weight: bold;
+}
+
+.packages .card .card-body .nav .nav-item .rounded-background {
+  padding: .25rem .5rem;
+  background: #00074B;
+  color: #FF0000;
+  border-radius: 30px;
+  font-size: 2rem;
+  width: 400px;
+}
+
+.packages .card .card-body .nav .nav-item .rounded-background::-moz-selection {
+  color: white;
+}
+
+.packages .card .card-body .nav .nav-item .rounded-background::selection {
+  color: white;
+}
+
+.packages .card .card-body .nav .nav-item:hover {
+  color: #FF0000;
+}
+
+/*=========================================
+            E-COMMERCE FEATURES
+===========================================*/
+.ecommerce-features {
+  margin-bottom: 2rem;
+}
+
+.ecommerce-features .lightbox {
+  background: #00074B;
+}
+
+.ecommerce-features .lightbox .port-item {
+  margin-left: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ecommerce-features .card {
+  border-radius: 0;
+  background: #eee;
+}
+
+.ecommerce-features .card ul {
+  padding: 0 2rem;
+}
+
+/*=========================================
+                    UPDATE
+===========================================*/
+.update {
+  background: url(../images/bb-tech.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.update .right {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.update .right .card-header {
+  border-bottom: 0;
+}
+
+.update .right .card-footer {
+  border: 0;
+}
+
+/*=========================================
+                    uptoDate
+===========================================*/
+.uptoDate .card {
+  height: 100%;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.uptoDate .left {
+  background: #00074B;
+}
+
+.uptoDate .left .card-body {
+  color: white;
+  font-weight: bold;
+}
+
+.uptoDate .left .card-body p {
+  font-size: 1.2rem;
+}
+
+.uptoDate .left .card-body .display-2 {
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.uptoDate .left:hover .card-body .display-2 {
+  color: #FF0000;
+}
+
+.uptoDate .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e64ff), to(#10316b));
+  background: linear-gradient(#3e64ff, #10316b);
+  color: white;
+  font-weight: bold;
+}
+
+.uptoDate .right span {
+  background-color: #00074B;
+  padding: .25rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FF0000;
+  border-radius: 30px;
+}
+
+.uptoDate .right .btn {
+  margin-left: 2rem;
+}
+
+/*=========================================
+                NEW CONTENT
+===========================================*/
+.newContent .card {
+  height: 100%;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.newContent .left {
+  background: #00074B;
+}
+
+.newContent .left .card-body {
+  color: white;
+  font-weight: bold;
+}
+
+.newContent .left .card-body p {
+  font-size: 1.2rem;
+}
+
+.newContent .left .card-body .display-2 {
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.newContent .left:hover .card-body .display-2 {
+  color: #FF0000;
+}
+
+.newContent .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e64ff), to(#10316b));
+  background: linear-gradient(#3e64ff, #10316b);
+  color: white;
+  font-weight: bold;
+}
+
+/*=========================================
+                NEW MODULE
+===========================================*/
+.webModule .card {
+  height: 100%;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.webModule .left {
+  background: #00074B;
+}
+
+.webModule .left .card-body {
+  color: white;
+  font-weight: bold;
+}
+
+.webModule .left .card-body p {
+  font-size: 1.2rem;
+}
+
+.webModule .left .card-body .display-2 {
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.webModule .left:hover .card-body .display-2 {
+  color: #FF0000;
+}
+
+.webModule .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e64ff), to(#10316b));
+  background: linear-gradient(#3e64ff, #10316b);
+  color: white;
+  font-weight: bold;
+}
+
+/*=====================================
+                LOGO
+=======================================*/
+.logo h1 {
+  color: #FF0000;
+  text-shadow: 0 1px 0 #2d132c, 0 2px 0 #2d132c, 0 3px 0 #2d132c, 0 4px 0 #2d132c, 0 5px 0 #2d132c, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-size: 3rem;
+}
+
+.logo h1::-moz-selection {
+  color: white;
+}
+
+.logo h1::selection {
+  color: white;
+}
+
+/*=====================================
+                LOGO BANNER
+=======================================*/
+.logo-banner {
+  background: url(../images/logoDesigns.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 250px;
+}
+
+/*=====================================
+            popularServices
+=======================================*/
+.popularServices {
+  background: #e5dfdf;
+  padding: 3rem 0;
+}
+
+.popularServices h2 {
+  margin-bottom: 2rem;
+  color: #272121;
+}
+
+.popularServices .card {
+  text-align: center;
+  background: none;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+.popularServices .card .card-body .display-4 .fas {
+  color: white;
+  padding: 30px;
+  background: #00074B;
+  font-size: 3rem;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.popularServices .card .card-body .lead {
+  color: #272121;
+}
+
+.popularServices .card .card-body .lead::-moz-selection {
+  color: #FF0000;
+}
+
+.popularServices .card .card-body .lead::selection {
+  color: #FF0000;
+}
+
+.popularServices .card:hover .card-body .display-4 .fas {
+  color: #FF0000;
+  background: #272121;
+}
+
+/*=====================================
+            MONEY BACK
+=======================================*/
+.money-back .media {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+}
+
+.money-back .media img {
+  width: 110px;
+  height: 110px;
+}
+
+/*=====================================
+                PACK
+=======================================*/
+.pack {
+  background: url(../images/bb-tech.jpg) no-repeat center center/cover;
+  color: white;
+}
+
+.pack h2 {
+  color: white;
+}
+
+/*=====================================
+                PACKAGES
+=======================================*/
+.packages .card {
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.packages .card .card-header {
+  background: transparent;
+}
+
+.packages .card .card-header .design {
+  background: #00074B;
+  padding: .5rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.packages .card .card-footer {
+  background: transparent;
+  border: 0;
+}
+
+/*=====================================
+            BANNER-DESIGN
+=======================================*/
+.banner-design {
+  background: url(../images/banner-design.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+/*=====================================
+            BANNER-DESIGN
+=======================================*/
+.bannerService h2 {
+  color: #272121;
+}
+
+.bannerService .navbar-nav .nav-item {
+  color: #272121;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bannerService .navbar-nav .nav-item .fab {
+  color: #00074B;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bannerService .navbar-nav .nav-item .fas {
+  color: #00074B;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bannerService .navbar-nav .nav-item:hover {
+  color: #FF0000;
+}
+
+.bannerService .navbar-nav .nav-item:hover .fab {
+  color: #FF0000;
+}
+
+.bannerService .navbar-nav .nav-item:hover .fas {
+  color: #FF0000;
+}
+
+/*=====================================
+            BUSINESS-DESIGN
+=======================================*/
+.business-design {
+  background: url(../images/business-card.png) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+.business-design .navbar-nav .nav-item:hover {
+  color: #FF0000;
+}
+
+.business-design .shade {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+/*=====================================
+            CARD-PACKAGE
+=======================================*/
+.card-package .card {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.card-package .card .card-body .card-title {
+  background: #00074B;
+  padding: .25rem;
+  border-radius: 1.25rem;
+  color: white;
+}
+
+.card-package .card .card-body .navbar-nav .nav-item {
+  color: #272121;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-weight: bold;
+}
+
+.card-package .card .card-body .navbar-nav .nav-item .fas {
+  color: #00074B;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-right: .25rem;
+}
+
+.card-package .card .card-body .navbar-nav .nav-item:hover {
+  color: #FF0000;
+}
+
+.card-package .card .card-body .navbar-nav .nav-item:hover .fas {
+  color: #FF0000;
+}
+
+.card-package .card:hover {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+
+/*=========================================
+                    CONTACT
+===========================================*/
+.contact h1::-moz-selection {
+  color: #FF0000;
+}
+.contact h1::selection {
+  color: #FF0000;
+}
+
+.contact .card {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.contact .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.contact .card .card-header .card-title::-moz-selection {
+  color: #FF0000 !important;
+}
+
+.contact .card .card-header .card-title::selection {
+  color: #FF0000 !important;
+}
+
+.contact .card .card-body .location {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.contact .card .card-body .form-group label::-moz-selection {
+  color: #FF0000;
+}
+
+.contact .card .card-body .form-group label::selection {
+  color: #FF0000;
+}
+
+.contact .card .card-body .form-group .form-control {
+  border-color: #00074B;
+  border-radius: 0;
+}
+
+.contact .card .card-body .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #FF0000;
+}
+
+.contact .location-map {
+  height: 410px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.contact .contact-form .card {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.contact .contact-form .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.contact .contact-form .card .card-header .card-title::-moz-selection {
+  color: #FF0000 !important;
+}
+
+.contact .contact-form .card .card-header .card-title::selection {
+  color: #FF0000 !important;
+}
+
+.contact .contact-form .card .card-body .form-group label::-moz-selection {
+  color: #FF0000;
+}
+
+.contact .contact-form .card .card-body .form-group label::selection {
+  color: #FF0000;
+}
+
+.contact .contact-form .card .card-body .form-group .form-control {
+  border-color: #00074B;
+  border-radius: 0;
+}
+
+.contact .contact-form .card .card-body .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #FF0000;
+}
+
+.contact .contact-form .card .card-body .my-btn {
+  background: #0013cb;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: white;
+  font-weight: bold;
+}
+
+.contact .contact-form .card .card-body .my-btn:hover {
+  background: #00074B;
+  color: #FF0000;
+}
+
+/*=========================================
+                    TOP
+===========================================*/
+.top {
+  background: #0013cb;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.top h1 {
+  color: #FF0000;
+  text-shadow: 0 1px 0 #2d132c, 0 2px 0 #2d132c, 0 3px 0 #2d132c, 0 4px 0 #2d132c, 0 5px 0 #2d132c, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 2.5rem;
+}
+
+.top h1::-moz-selection {
+  color: white;
+}
+
+.top h1::selection {
+  color: white;
+}
+
+.top h2 {
+  color: #FF0000;
+  text-shadow: 0 1px 0 #2d132c, 0 2px 0 #2d132c, 0 3px 0 #2d132c, 0 4px 0 #2d132c, 0 5px 0 #2d132c, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 2rem;
+}
+
+.top h2::-moz-selection {
+  color: white;
+}
+
+.top h2::selection {
+  color: white;
+}
+
+/*=========================================
+                    BANNER
+===========================================*/
+.banner {
+  width: 100%;
+  height: 420px !important;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: item 8s linear infinite 5s;
+          animation: item 8s linear infinite 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  animation-direction: reverse;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background: url(../images/carousel/1.jpg) no-repeat center center/cover;
+}
+
+@-webkit-keyframes item {
+  0% {
+    background: url(../images/carousel/1.jpg) no-repeat center center/cover;
+  }
+  25% {
+    background: url(../images/carousel/2.jpg) no-repeat center center/cover;
+  }
+  50% {
+    background: url(../images/carousel/3.jpg) no-repeat center center/cover;
+  }
+  75% {
+    background: url(../images/carousel/4.jpg) no-repeat center center/cover;
+  }
+  100% {
+    background: url(../images/carousel/5.jpg) no-repeat center center/cover;
+  }
+}
+
+@keyframes item {
+  0% {
+    background: url(../images/carousel/1.jpg) no-repeat center center/cover;
+  }
+  25% {
+    background: url(../images/carousel/2.jpg) no-repeat center center/cover;
+  }
+  50% {
+    background: url(../images/carousel/3.jpg) no-repeat center center/cover;
+  }
+  75% {
+    background: url(../images/carousel/4.jpg) no-repeat center center/cover;
+  }
+  100% {
+    background: url(../images/carousel/5.jpg) no-repeat center center/cover;
+  }
+}
+
+.banner .overlay {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.banner .container-fluid {
+  height: 100%;
+}
+
+.banner .owl-theme .item .card {
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  height: 100% !important;
+  color: white;
+  margin-top: 3.5rem;
+}
+
+.banner .owl-theme .item .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.banner .owl-theme .item .card .card-body .card-text::-moz-selection {
+  color: #FF0000;
+}
+
+.banner .owl-theme .item .card .card-body .card-text::selection {
+  color: #FF0000;
+}
+
+.banner .owl-theme .item .card .card-body .btn {
+  border-radius: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-weight: bold;
+}
+
+.banner .owl-theme .item .card .card-body .btn:hover {
+  background-color: #00074B;
+  opacity: .8;
+  color: #FF0000;
+}
+
+.banner .owl-theme .item .card .card-body .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*=========================================
+                    OFFER
+===========================================*/
+.offer .card {
+  background: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 1rem 0;
+  height: 100%;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.offer .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.offer .card .card-header .display-4 .fa-wordpress {
+  color: #00749C;
+}
+
+.offer .card .card-header .display-4 .fa-android {
+  color: #a4c639;
+}
+
+.offer .card .card-header .display-4 .fa-cog {
+  color: #17917F;
+}
+
+.offer .card .card-header .display-4 .fa-map-signs {
+  color: #1e73be;
+}
+
+.offer .card .card-header .display-4 .fa-chart-line {
+  color: #FF0000;
+}
+
+.offer .card .card-header .display-4 .fa-home {
+  color: #00B4A3;
+}
+
+.offer .card:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+/*=========================================
+                    CLIENTS
+===========================================*/
+.clients {
+  height: 100vh;
+}
+
+.clients .card-deck .card {
+  background: none;
+  border: 0;
+}
+
+.clients .card-deck .card .card-header {
+  background: none;
+  border-bottom: 0;
+}
+
+.clients .card-deck .card .card-header .card-img-top {
+  overflow: hidden;
+  max-width: 130px;
+  max-height: 130px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.clients .card-deck .card .card-body small {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

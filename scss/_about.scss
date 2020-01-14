@@ -1,0 +1,41 @@
+/*=========================================
+                    ABOUT
+===========================================*/
+.about {
+    h1 {
+        &::selection {
+            color: $secondary-color;
+        }
+    }
+
+    .card {
+        border: 0;
+
+        .card-body {
+            .card-title {
+                &::selection {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+/*=========================================
+                ABOUT PACKAGES
+===========================================*/
+.about-packages {
+    .card {
+        height: 300px;
+        .card-header {
+            background: none;
+            border-bottom: 0;
+            h1 {
+                color: $secondary-color;
+            }
+        }
+        .card-body {
+            margin-top: -1rem;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/*=========================================
+                    PORTFOLIO
+===========================================*/
+.portfolio-title {
+    .lead {
+        color: $dark;
+        text-shadow: 1px 1px 3px rgba(29, 26, 26, 0.75);
+        font-size: 1.6rem;
+    }
+}
+
+.portfolio {
+    .card {
+        box-shadow: 1px 1px 3px rgba(29, 26, 26, 0.75);
+        border-radius: 0;
+        .card-body {
+            .card-title {
+                color: $dark;
+                text-shadow: 1px 1px 3px rgba(29, 26, 26, 0.75);
+                font-size: 1.2rem;
+            }
+        }
+        &:hover {
+            .card-body {
+                .card-title {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

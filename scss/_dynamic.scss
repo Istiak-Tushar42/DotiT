@@ -1,0 +1,95 @@
+/*=========================================
+                DYNAMIC
+===========================================*/
+.dynamic {
+    .card {
+        border: 0;
+        background: none;
+        padding: 0;
+        .card-header {
+            border-bottom: 0;
+            background: transparent;
+            .card-title {
+                color: $black;
+                font-weight: bold;
+            }
+        }
+        .card-body {
+            .nav {
+                .nav-item {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-bottom: .5rem !important;
+                    color: $black;
+                    transition: all .5s ease-in-out;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+        .card-footer {
+            background: none;
+            border: 0;
+        }
+    }
+}
+
+/*=========================================
+                DYNAMIC PACK
+===========================================*/
+.dynamic-pack {
+    background: darken($color: $primary-color, $amount: 5%);
+    padding: 1rem;
+    .media {
+        margin-top: 2rem;
+        h1 {
+            margin-top: 2.5rem;
+            .fab{
+                color: $secondary-color;
+                padding: 10px;
+                border-radius: 50%;
+            }
+            .fas {
+                color: $secondary-color;
+            }
+        }
+
+        .media-body {
+            h5 {
+                color: $secondary-color;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+            p {
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*=========================================
+                    INFO
+===========================================*/
+.info {
+    h1.top {
+        color: $secondary-color;
+    }
+    .media {
+        box-shadow: $box-shadow;
+        padding: 1rem;
+        height: 100%;
+        .media-body {
+            h5 {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                color: $black;
+                font-weight: bold;
+            }
+        }
+    }
+}

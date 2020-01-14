@@ -1,0 +1,157 @@
+/*=========================================
+                    UPDATE
+===========================================*/
+.update {
+    background: url(../images/bb-tech.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+
+    .right {
+        background: none;
+        border: 0;
+        border-radius: 0;
+        color: white;
+        .card-header {
+            border-bottom: 0;
+        }
+
+        .card-footer {
+            border: 0;
+        }
+    }
+}
+
+/*=========================================
+                    uptoDate
+===========================================*/
+.uptoDate {
+    .card {
+        height: 100%;
+        background: none;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .left {
+        background: $primary-color;
+        .card-body {
+            color: white;
+            font-weight: bold;
+            p {
+                font-size: 1.2rem;
+            }
+            .display-2 {
+                color: white;
+                transition: all .5s ease-in-out;
+            }
+        }
+
+        &:hover {
+            .card-body {
+                .display-2 {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .right {
+        background: linear-gradient(#3e64ff, #10316b);
+        color: white;
+        font-weight: bold;
+
+        span {
+            background-color: $primary-color;
+            padding: .25rem 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: $secondary-color;
+            border-radius: 30px;
+        }
+
+        .btn {
+            margin-left: 2rem;
+        }
+    }
+}
+
+/*=========================================
+                NEW CONTENT
+===========================================*/
+.newContent {
+    .card {
+        height: 100%;
+        background: none;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .left {
+        background: $primary-color;
+        .card-body {
+            color: white;
+            font-weight: bold;
+            p {
+                font-size: 1.2rem;
+            }
+            .display-2 {
+                color: white;
+                transition: all .5s ease-in-out;
+            }
+        }
+
+        &:hover {
+            .card-body {
+                .display-2 {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .right {
+        background: linear-gradient(#3e64ff, #10316b);
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/*=========================================
+                NEW MODULE
+===========================================*/
+.webModule {
+    .card {
+        height: 100%;
+        background: none;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .left {
+        background: $primary-color;
+        .card-body {
+            color: white;
+            font-weight: bold;
+            p {
+                font-size: 1.2rem;
+            }
+            .display-2 {
+                color: white;
+                transition: all .5s ease-in-out;
+            }
+        }
+
+        &:hover {
+            .card-body {
+                .display-2 {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .right {
+        background: linear-gradient(#3e64ff, #10316b);
+        color: white;
+        font-weight: bold;
+    }
+}

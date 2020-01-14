@@ -1,0 +1,97 @@
+/*=========================================
+                STATIC WEBSITE
+===========================================*/
+.static {
+    .card {
+        border: 0;
+        height: 100%;
+        border-radius: 0;
+        .card-header {
+            border-bottom: 0;
+            background: none;
+        }
+
+        .card-body {
+            .display-2 {
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+
+        .card-footer {
+            background: none;
+            border: 0;
+            .btn-block {
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+/*=========================================
+                STATIC PACKAGES
+===========================================*/
+.static-packages {
+    .card {
+        border: 0;
+        height: 100%;
+        border-radius: 0;
+        color: white;
+        .card-header {
+            background: none;
+            border-bottom: 0;
+            .card-title {
+                color: white;
+            }
+            h1 {
+                .far {
+                    color: $secondary-color;
+                    font-weight: bold;
+                }
+            }
+
+            .lead {
+                color: red;
+                font-weight: bold;
+            }
+        }
+        .card-body {
+            .nav {
+                .nav-item {
+                    font-weight: bold;
+                    transition: all .5s ease-in-out;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            .btn {
+                border-radius: 30px;
+                border: 0;
+            }
+
+            .btn-lg {
+                width: 200px;
+            }
+
+            .btn-md {
+                width: 180px;
+            }
+
+            .card-text {
+                color: $secondary-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .left {
+        background: #4323FA;
+    }
+    .right {
+        background: linear-gradient(#3e64ff, #111d5e);
+        padding: 0 !important;
+    }
+}

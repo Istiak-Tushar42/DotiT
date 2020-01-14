@@ -1,0 +1,99 @@
+/*=========================================
+                    CONTACT
+===========================================*/
+.contact {
+    h1 {
+        &::selection {
+            color: $secondary-color;
+        }
+    }
+
+    .card {
+        border-radius: 0;
+        box-shadow: $box-shadow;
+        .card-header {
+            background: none;
+            border-bottom: 0;
+
+            .card-title {
+                &::selection {
+                    color: $secondary-color !important;
+                }
+            }
+        }
+
+        .card-body {
+            .location {
+                box-shadow: $box-shadow;
+            }
+        }
+
+        .card-body {
+            .form-group {
+                label {
+                    &::selection {
+                        color: $secondary-color;
+                    }
+                }
+                .form-control {
+                    border-color: $primary-color;
+                    border-radius: 0;
+                    &:focus {
+                        box-shadow: none;
+                        border-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .location-map {
+        height: 410px;
+        box-shadow: $box-shadow;
+    }
+
+    .contact-form {
+        .card {
+            border-radius: 0;
+            box-shadow: $box-shadow;
+            .card-header {
+                background: none;
+                border-bottom: 0;
+
+                .card-title {
+                    &::selection {
+                        color: $secondary-color !important;
+                    }
+                }
+            }
+
+            .card-body {
+                .form-group {
+                    label {
+                        &::selection {
+                            color: $secondary-color;
+                        }
+                    }
+                    .form-control {
+                        border-color: $primary-color;
+                        border-radius: 0;
+                        &:focus {
+                            box-shadow: none;
+                            border-color: $secondary-color;
+                        }
+                    }
+                }
+                .my-btn {
+                    background: lighten($color: $primary-color, $amount: 25%);
+                    transition: all .5s ease-in-out;
+                    color: white;
+                    font-weight: bold;
+                    &:hover {
+                        background: $primary-color;
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/*=====================================
+            BANNER-DESIGN
+=======================================*/
+.banner-design {
+    background: url(../images/banner-design.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+/*=====================================
+            BANNER-DESIGN
+=======================================*/
+.bannerService {
+    h2 {
+        color: $black;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            color: $black;
+            transition: all .5s ease-in-out;
+            .fab {
+                color: $primary-color;
+                transition: all .5s ease-in-out;
+            }
+            .fas {
+                color: $primary-color;
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+                color: $secondary-color;
+                .fab {
+                    color: $secondary-color;
+                }
+                .fas {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

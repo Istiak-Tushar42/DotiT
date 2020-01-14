@@ -1,0 +1,112 @@
+/*=========================================
+                    HEADER
+===========================================*/
+.header {
+    box-shadow: $box-shadow;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $primary-color;
+                font-size: .9rem;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: .15rem;
+                    background: $primary-color;
+                    transition: width .3s;
+                    transform-origin:right;
+                }
+
+                &:hover {
+                    color: $primary-color;
+
+                    &:after {
+                        width: 100%;
+                        transition: width .3s;
+                        transform-origin:left;
+                    }
+                }
+            }
+        }
+
+        .nav-item.active {
+            .nav-link {
+                color: $secondary-color;
+                font-weight: bold;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: .15rem;
+                    background: $secondary-color;
+                    transition: width .3s;
+                }
+            }
+        }
+
+        .dropdown {
+            .dropdown-toggle {
+                &:after {
+                    display: block;
+                    margin-left: 0 !important;
+                    content: "";
+                    border: 0 !important;
+                }
+            }
+
+            .dropdown-menu {
+                border-radius: 0;
+                margin-top: 1.5rem;
+                padding: 0;
+                border: 0;
+                box-shadow: $box-shadow;
+
+                .dropdown-item {
+                    color: $primary-color;
+                    font-size: .8rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: .6rem;
+                    vertical-align: middle;
+
+                    &:hover {
+                        background: $primary-color;
+                        color: white;
+                    }
+                }
+
+                .active {
+                    background: $primary-color;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #e8e8e8;
+    background: rgba(255, 255, 255, 1);
+    vertical-align: middle;
+
+    .navbar-brand {
+        img {
+            height: 50px;
+        }
+    }
+    .navbar-nav {
+        .dropdown {
+            .dropdown-menu {
+                margin-top: .75rem;
+            }
+        }
+    }
+}

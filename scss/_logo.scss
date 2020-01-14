@@ -1,0 +1,123 @@
+/*=====================================
+                LOGO
+=======================================*/
+.logo {
+    h1 {
+        color: $secondary-color;
+        text-shadow: $text-shadow;
+        font-size: 3rem;
+        &::selection {
+            color: white;
+        }
+    }
+}
+
+/*=====================================
+                LOGO BANNER
+=======================================*/
+.logo-banner {
+    background: url(../images/logoDesigns.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 250px;
+}
+
+/*=====================================
+            popularServices
+=======================================*/
+.popularServices {
+    background: #e5dfdf;
+    padding: 3rem 0;
+
+    h2 {
+        margin-bottom: 2rem;
+        color: $black;
+    }
+
+    .card {
+        text-align: center;
+        background: none;
+        box-shadow: $box-shadow;
+        padding: 1rem;
+        .card-body {
+            .display-4 {
+                .fas {
+                    color: white;
+                    padding: 30px;
+                    background: $primary-color;
+                    font-size: 3rem;
+                    border-radius: 50%;
+                    transition: all .5s ease-in-out;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            .lead {
+                color: $black;
+                &::selection {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        &:hover {
+            .card-body {
+                .display-4 {
+                    .fas {
+                        color: $secondary-color;
+                        background: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+            MONEY BACK
+=======================================*/
+.money-back {
+    .media {
+        box-shadow: $box-shadow;
+        border-radius: 0;
+        img {
+            width: 110px;
+            height: 110px;
+        }
+    }
+}
+
+/*=====================================
+                PACK
+=======================================*/
+.pack {
+    background: url(../images/bb-tech.jpg) no-repeat center center/cover;
+    color: white;
+
+    h2 {
+        color: white;
+    }
+}
+
+/*=====================================
+                PACKAGES
+=======================================*/
+.packages {
+    .card {
+        border: 0;
+        border-radius: 0;
+        box-shadow: $box-shadow;
+        .card-header {
+            background: transparent;
+            .design {
+                background: $primary-color;
+                padding: .5rem;
+                color: white;
+                border-radius: 20px;
+            }
+        }
+        .card-footer {
+            background: transparent;
+            border: 0;
+        }
+    }
+}
